@@ -68,7 +68,11 @@ body {
     align-items: center;
 
 }
+.menu-lateral__link:active {
+    color: var(--cor-fonte);
 
+    
+}
 .menu-lateral__link::before {
     content: "";
     width: 24px;
