@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+
+
+:root {
+    --cor-de-fundo :#1D232A;
+    --cor-secundaria: #15191C;
+    --cartão:#2C343A;
+    --cor-fonte:#FFFFFF;
+    --fonte-principal:"Open Sans";
+    --fonte-icones:'icones';
+    --fonte-secundario:"Josefin Sans", sans-serif;
+    --cor-fonte-alternativa: #95999C;
+    --cor-links:#0480DC;
+}
+@font-face {
+    font-family: 'icones';
+    src: url('assets/font/icones.ttf');
+}
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-fonte);
+    font-family:"Open Sans",'icones', sans-serif;
+    
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    padding: 16p 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
+}
+.cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+.cabecalho__notificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+}
+.cabecalho__logo {
+    width: 40px;
+}
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+}
