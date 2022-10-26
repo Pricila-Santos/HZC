@@ -23,7 +23,7 @@
 
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cartão);
     color: var(--cor-fonte);
     font-family:"Open Sans",'icones', sans-serif;
     
@@ -51,4 +51,54 @@ body {
 .menu-lateral {
     display: flex;
     flex-direction: column;
+    background-color: var(--cor-secundaria);
+    width: 75vw;
+    height: 100vh;
+}
+.menu-lateral__logo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+.menu-lateral__link{
+    height: 64px;
+    color: var(--cor-fonte-alternativa);
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-lateral__link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+
+}
+.menu-inicio::before {
+    content: "\e902";
+
+}
+.menu-video::before {
+    content: "\e90e";
+    
+}
+.menu-picos::before {
+    content: "\e909";
+    
+}
+.menu-integrantes::before {
+    content: "\e903";
+    
+}
+.menu-camisas::before {
+    content: "\e900";
+    
+}
+.menu-pinturas::before {
+    content: "\e90a";
+    
 }
