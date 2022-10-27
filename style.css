@@ -54,6 +54,15 @@ body {
     background-color: var(--cor-secundaria);
     width: 75vw;
     height: 100vh;
+
+    position: absolute;
+    left: -100vw;
+    transition: left 0.25s;
+}
+.menu-lateral--ativo {
+    left: 0;
+    transition: left 0.25s;
+
 }
 .menu-lateral__logo {
     width: 118px;
@@ -68,8 +77,10 @@ body {
     align-items: center;
 
 }
-.menu-lateral__link:active {
+.menu-lateral__link--ativo{
     color: var(--cor-fonte);
+    padding: 56px;
+    border-left: 8px solid var(--cor-fonte);
 
     
 }
@@ -104,5 +115,21 @@ body {
 }
 .menu-pinturas::before {
     content: "\e90a";
+    
+}
+.principal{
+    padding: 24px 16px;
+}
+.titulo-principal {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.cartão {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden; 
+    
+}
+.cartão__conteudo {
     
 }
